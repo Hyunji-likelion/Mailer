@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get 'mailbox/new_mail'
 
-  get 'mailbox/send_mail'
+  post 'mailbox/send_mail'
 
-  get 'home/index'
+  root 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
