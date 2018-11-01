@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'mailbox/new_mail'
 
   post 'mailbox/send_mail'
+  
+  get 'mailbox/list' #get 'mailbox/list'=>'mailbox#list'
 
   root 'home#index'
 

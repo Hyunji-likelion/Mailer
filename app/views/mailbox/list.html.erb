@@ -1,0 +1,9 @@
+<h1>메일 목록 </h1>
+
+
+<% @mail_all.each do |m| %>
+    보내는 메일 <%= m.from_m %> <br>
+   받는 메일 <%= m.to_m %> <br>
+   제목 <%= m.title %> <br>
+    내용 <%= m.content %> <br> <hr>
+<% end %>
